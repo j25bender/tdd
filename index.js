@@ -1,4 +1,4 @@
-const randomNumberArray = require('./randomNumberArray.js');
+	const randomNumberArray = require('./randomNumberArray.js');
 const bubbleSort = require('./bubbleSort.js');
 const insertionSort = require('./insertionSort.js');
 const mergeSort = require('./mergeSort.js');
