@@ -1,10 +1,10 @@
-const randomNumberArray = require('./scripts/randomNumberArray.js');
-const bubbleSort = require('./scripts/bubbleSort.js');
-const insertionSort = require('./scripts/insertionSort.js');
-const mergeSort = require('./scripts/mergeSort.js');
-const quickSort = require ('./scripts/quickSort.js');
+import randomNumberArray from './scripts/randomNumberArray.js';
+import bubbleSort from './scripts/bubbleSort.js';
+import insertionSort from './scripts/insertionSort.js';
+import mergeSort from './scripts/mergeSort.js';
+import quickSort from './scripts/quickSort.js';
 
-module.exports = {
+export default {
 	randomNumberArray,
 	bubbleSort,
 	insertionSort,
