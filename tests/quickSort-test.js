@@ -1,6 +1,6 @@
 import { assert } from 'chai';
-import quickSort from '../scripts/quickSort.js'
-import { populateRandomArray, sortCheck } from '../scripts/randomNumberArray.js'
+const quickSort = require('../scripts/quickSort.js');
+const { populateRandomArray, sortCheck } = require('../scripts/randomNumberArray.js');
 
 describe('Quick Sort Test', () => {
   

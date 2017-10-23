@@ -21,4 +21,4 @@ const merge = (left, right) => {
     return result;
 }
 
-export default mergeSort
+module.exports = mergeSort;

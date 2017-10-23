@@ -1,4 +1,4 @@
-function populateRandomArray (lowerLimit, upperLimit, arraySize) {
+const populateRandomArray = (lowerLimit, upperLimit, arraySize) => {
   var resultArray = [];
   for (var i = 0 ; i < arraySize; i++){
     var random = Math.floor(Math.random() * ( upperLimit - lowerLimit ) + lowerLimit);
@@ -7,7 +7,7 @@ function populateRandomArray (lowerLimit, upperLimit, arraySize) {
   return resultArray;
 }
 
-function sortCheck (sortedArray) {
+const sortCheck = (sortedArray) => {
     for (let i = 0; i < sortedArray.length; i++) {
         if (sortedArray[i] <= sortedArray[i + 1]) {
             return true;
@@ -17,4 +17,4 @@ function sortCheck (sortedArray) {
     }
 }
 
-export { populateRandomArray, sortCheck } 
+module.exports = { populateRandomArray, sortCheck };

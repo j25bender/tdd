@@ -1,6 +1,6 @@
 import { assert } from 'chai';
-import insertionSort from '../scripts/insertionSort.js';
-import { populateRandomArray, sortCheck } from '../scripts/randomNumberArray.js';
+const insertionSort = require('../scripts/insertionSort.js');
+const { populateRandomArray, sortCheck } = require('../scripts/randomNumberArray.js');
 
 describe('Insertion Sort Tests', () => {
   

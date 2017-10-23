@@ -1,6 +1,6 @@
 import { assert } from 'chai';
-import bubbleSort from '../scripts/bubbleSort.js'
-import { populateRandomArray, sortCheck } from '../scripts/randomNumberArray.js';
+const bubbleSort = require('../scripts/bubbleSort.js');
+const { populateRandomArray, sortCheck } = require('../scripts/randomNumberArray.js');
 
 describe('Bubble Sort Test', () => {
   

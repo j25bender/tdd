@@ -20,4 +20,4 @@ const quickSort = array => {
   ];
 };
 
-export default quickSort
+module.exports = quickSort;

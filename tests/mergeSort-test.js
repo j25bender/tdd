@@ -1,6 +1,6 @@
 import { assert } from 'chai';
-import mergeSort from '../scripts/mergeSort.js'
-import { populateRandomArray, sortCheck } from '../scripts/randomNumberArray.js'
+const mergeSort = require('../scripts/mergeSort.js');
+const { populateRandomArray, sortCheck } = require('../scripts/randomNumberArray.js');
 
 describe('Merge Sort Test', () => {
   
