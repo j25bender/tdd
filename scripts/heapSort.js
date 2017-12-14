@@ -1,6 +1,7 @@
+let arr = [];
 let lastIndex = arr.length - 1;
 
-const maxHeap = (arr, i) => {
+const buildHeap = (arr, i) => {
   let leftChild = 2 * i + 1;
   let rightChild = 2 * i + 2; 
   let parent = i;
@@ -17,15 +18,15 @@ const maxHeap = (arr, i) => {
 
     arr[i] = arr[parent];
     arr[parent] = temp;
-    maxHeap(arr, parent);
+    buildHeap(arr, parent);
   }
 }
 
-const sortHeap = arr => {
+const heapSort = (arr, i) => {
   lastIndex = arr.length;
 
   for(let i = Math.floor(lastIndex / 2); i >= 0; i--){
-    maxHeap(arr, i);
+    buildHeap(arr, i);
   }
   
   for(i = arr.length - 1; i > 0; i--){
@@ -34,7 +35,7 @@ const sortHeap = arr => {
       arr[i] = temp;
       
       lastIndex--;
-      maxHeap(arr, 0);
+      buildHeap(arr, 0);
     }
     return arr;
 }

@@ -5,8 +5,7 @@ const { populateRandomArray, sortCheck } = require('../scripts/randomNumberArray
 describe('Heap Sort Test', () => {
   
     it('should be a function', () => {
-        assert.isFunction(maxHeap);
-        assert.isFunction(sortHeap);
+        assert.isFunction(heapSort);
     });
 
     it('should sort an array with 10 items', () => {
@@ -26,6 +25,21 @@ describe('Heap Sort Test', () => {
 
     it('should sort an array with 10,000 items', () => {
         let tenFour = populateRandomArray(0, 100000, 10000);
+        assert.equal(sortCheck(heapSort(tenFour)),true);
+    });
+
+    it('should sort an array with 100,000 items', () => {
+        let tenFour = populateRandomArray(0, 100000, 100000);
+        assert.equal(sortCheck(heapSort(tenFour)),true);
+    });
+
+    it('should sort an array with 1,000,000 items', () => {
+        let tenFour = populateRandomArray(0, 100000, 1000000);
+        assert.equal(sortCheck(heapSort(tenFour)),true);
+    });
+
+    it('should sort an array with 1,000,000 items', () => {
+        let tenFour = populateRandomArray(0, 100000, 1000000);
         assert.equal(sortCheck(heapSort(tenFour)),true);
     });
 
